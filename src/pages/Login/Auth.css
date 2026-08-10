@@ -1,0 +1,129 @@
+.hh-auth {
+  padding: 80px 32px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.hh-auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  padding: 48px 40px;
+}
+
+.hh-auth-card .section-heading {
+  margin: 8px 0 28px;
+  font-size: 28px;
+}
+
+.hh-auth-error {
+  background: color-mix(in srgb, var(--hh-burgundy) 12%, transparent);
+  border: 1px solid var(--hh-burgundy);
+  color: var(--hh-burgundy);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.hh-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hh-auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.hh-auth-form input {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: normal;
+  outline: none;
+}
+
+.hh-auth-form input:focus {
+  border-color: var(--accent);
+}
+
+.hh-auth-hint {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.hh-auth-form .btn {
+  margin-top: 8px;
+}
+
+.hh-auth-switch {
+  margin-top: 24px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.hh-auth-switch a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hh-role-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.hh-role-toggle button {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.hh-role-toggle button span {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.hh-role-toggle button.is-active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+@media (max-width: 540px) {
+  .hh-auth-card {
+    padding: 36px 24px;
+  }
+
+  .hh-role-toggle {
+    grid-template-columns: 1fr;
+  }
+}

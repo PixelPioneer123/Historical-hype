@@ -1,0 +1,103 @@
+.hh-product-card {
+  position: relative;
+}
+
+.hh-product-image-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--border);
+  border: 1px solid transparent;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.hh-product-card:hover .hh-product-image-wrap {
+  border-color: var(--accent);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.hh-product-img-primary,
+.hh-product-img-secondary {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+.hh-product-img-secondary {
+  opacity: 0;
+}
+
+.hh-product-card:hover .hh-product-img-primary {
+  transform: scale(1.06);
+  opacity: 0;
+}
+
+.hh-product-card:hover .hh-product-img-secondary {
+  transform: scale(1.06);
+  opacity: 1;
+}
+
+.hh-new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--hh-burgundy);
+  color: var(--hh-ivory);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  z-index: 2;
+}
+
+.hh-wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--bg-elevated);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  z-index: 2;
+  transition: color var(--transition);
+}
+
+.hh-wishlist-btn.is-active {
+  color: var(--hh-burgundy);
+}
+
+.hh-product-info {
+  display: block;
+  padding-top: 12px;
+}
+
+.hh-product-info h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.hh-product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hh-product-price {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}

@@ -1,0 +1,181 @@
+.hh-seller {
+  padding: 60px 32px 100px;
+}
+
+.hh-seller .section-heading {
+  margin-bottom: 40px;
+}
+
+.hh-seller-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.hh-seller-form-panel,
+.hh-seller-listings {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+
+.hh-seller-form-panel h2,
+.hh-seller-listings h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.hh-seller-success {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.hh-seller-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hh-seller-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.hh-optional {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.hh-seller-form input,
+.hh-seller-form textarea {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: normal;
+  outline: none;
+  resize: vertical;
+}
+
+.hh-seller-form input:focus,
+.hh-seller-form textarea:focus {
+  border-color: var(--accent);
+}
+
+.hh-seller-form input[type="file"] {
+  padding: 8px;
+}
+
+.hh-seller-field-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.hh-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hh-chip {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.hh-chip.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.hh-seller-file-count {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.hh-seller-empty {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.hh-seller-product-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hh-seller-product-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hh-seller-product-list img {
+  width: 56px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.hh-seller-product-info {
+  flex: 1;
+}
+
+.hh-seller-product-info h4 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.hh-seller-product-info p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.hh-seller-product-list .hh-icon-btn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--hh-burgundy);
+  border: 1px solid var(--hh-burgundy);
+  padding: 6px 10px;
+}
+
+@media (max-width: 900px) {
+  .hh-seller-layout {
+    grid-template-columns: 1fr;
+  }
+}

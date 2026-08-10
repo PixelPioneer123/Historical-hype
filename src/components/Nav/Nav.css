@@ -1,0 +1,281 @@
+.hh-nav {
+  font-family: var(--font-display);
+  background: var(--bg);
+}
+
+/* ---------- Utility bar ---------- */
+
+.hh-utility-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-bg);
+  padding: 6px 28px;
+}
+
+.hh-utility-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--nav-text);
+}
+
+.hh-icon-btn {
+  background: none;
+  border: none;
+  color: var(--nav-text);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.hh-drop-badge {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--accent);
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding: 4px 14px;
+}
+
+.hh-utility-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--nav-text);
+}
+
+.hh-icon-with-count {
+  position: relative;
+}
+
+.hh-count {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 50%;
+  min-width: 14px;
+  text-align: center;
+}
+
+.hh-mobile-toggle {
+  display: none;
+}
+
+.hh-account-menu {
+  position: relative;
+}
+
+.hh-account-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  min-width: 190px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hh-account-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--text);
+}
+
+.hh-account-role {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.hh-account-dropdown a,
+.hh-account-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 8px 4px;
+  text-align: left;
+}
+
+.hh-account-dropdown a:hover,
+.hh-account-dropdown button:hover {
+  color: var(--accent);
+}
+
+/* ---------- Hero / logo ---------- */
+
+.hh-hero {
+  position: relative;
+  text-align: center;
+  padding: 24px 20px 18px;
+  display: block;
+}
+
+.hh-monogram {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: color-mix(in srgb, var(--hh-burgundy) 8%, transparent);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hh-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: var(--text);
+}
+
+.hh-title-accent {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  background: var(--hh-burgundy);
+  color: var(--accent);
+  padding: 2px 12px;
+}
+
+.hh-tagline {
+  margin: 10px 0 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--accent);
+}
+
+/* ---------- Divider ---------- */
+
+.hh-divider {
+  height: 1px;
+  margin: 0 40px;
+  background: var(--accent);
+}
+
+/* ---------- Main navigation ---------- */
+
+.hh-main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  background: var(--hh-burgundy);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 150;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+.hh-nav-link {
+  color: var(--hh-ivory);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  font-family: var(--font-display);
+}
+
+.hh-nav-link:hover,
+.hh-nav-link.is-active {
+  opacity: 0.75;
+}
+
+.hh-nav-link--badge {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--hh-royal-black);
+  background: var(--accent);
+  padding: 4px 10px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .hh-title {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .hh-monogram {
+    font-size: 42px;
+  }
+
+  .hh-tagline {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .hh-mobile-toggle {
+    display: inline-flex;
+  }
+
+  .hh-main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .hh-main-nav.is-open {
+    display: flex;
+  }
+
+  .hh-main-nav .hh-nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hh-nav-link--badge {
+    margin: 10px auto;
+    width: fit-content;
+  }
+
+  .hh-utility-bar {
+    padding: 8px 14px;
+  }
+
+  .hh-drop-badge {
+    font-size: 9px;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+  }
+}

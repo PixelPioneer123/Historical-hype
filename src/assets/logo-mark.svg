@@ -1,0 +1,27 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Historical Hype crest mark</title>
+  <desc>A shield emblem with an interlocked HH monogram, a diamond above the shield, and laurel sprigs flanking the base.</desc>
+
+  <path d="M110,345 C90,335 65,320 50,290" fill="none" stroke="#C8A35D" stroke-width="2.5"/>
+  <path d="M290,345 C310,335 335,320 350,290" fill="none" stroke="#C8A35D" stroke-width="2.5"/>
+  <g fill="#C8A35D">
+    <ellipse cx="95" cy="335" rx="14" ry="6" transform="rotate(-40 95 335)"/>
+    <ellipse cx="75" cy="320" rx="14" ry="6" transform="rotate(-52 75 320)"/>
+    <ellipse cx="60" cy="305" rx="14" ry="6" transform="rotate(-64 60 305)"/>
+    <ellipse cx="50" cy="290" rx="12" ry="5" transform="rotate(-75 50 290)"/>
+    <ellipse cx="305" cy="335" rx="14" ry="6" transform="rotate(40 305 335)"/>
+    <ellipse cx="325" cy="320" rx="14" ry="6" transform="rotate(52 325 320)"/>
+    <ellipse cx="340" cy="305" rx="14" ry="6" transform="rotate(64 340 305)"/>
+    <ellipse cx="350" cy="290" rx="12" ry="5" transform="rotate(75 350 290)"/>
+  </g>
+
+  <path d="M90,60 L310,60 C310,170 300,270 200,340 C100,270 90,170 90,60 Z"
+        fill="#111111" stroke="#C8A35D" stroke-width="3"/>
+  <path d="M100,68 L300,68 C300,168 291,258 200,325 C109,258 100,168 100,68 Z"
+        fill="none" stroke="#C8A35D" stroke-width="1"/>
+
+  <rect x="187" y="37" width="26" height="26" transform="rotate(45 200 50)" fill="#C8A35D"/>
+
+  <text x="130" y="272" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="132" fill="#C8A35D">H</text>
+  <text x="270" y="272" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="132" fill="#C8A35D" text-anchor="end">H</text>
+</svg>
